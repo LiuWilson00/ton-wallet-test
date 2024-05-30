@@ -4,6 +4,9 @@ import viteLogo from "/vite.svg";
 import WebApp from "@twa-dev/sdk";
 import { TonConnectUIProvider } from "@tonconnect/ui-react";
 import Header from "./components/Header";
+import Address from "./components/Address";
+import Wallet from "./components/Wallet";
+import Settings from "./components/Settings";
 import "./App.css";
 
 function App() {
@@ -17,6 +20,9 @@ function App() {
       }}
     >
       <Header></Header>
+      <Address></Address>
+      <Wallet></Wallet>
+      <Settings></Settings>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
