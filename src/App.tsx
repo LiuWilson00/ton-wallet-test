@@ -2,11 +2,13 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import WebApp from "@twa-dev/sdk";
+import { MainButton } from "@twa-dev/sdk/react";
 import { TonConnectUIProvider } from "@tonconnect/ui-react";
 import Header from "./components/Header";
 import Address from "./components/Address";
 import Wallet from "./components/Wallet";
 import Settings from "./components/Settings";
+import InitData from "./components/InitData";
 import "./App.css";
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
         twaReturnUrl: "https://t.me/roytest_bot/tonWalletTest",
       }}
     >
+      <InitData></InitData>
       <Header></Header>
       <Address></Address>
       <Wallet></Wallet>
@@ -52,6 +55,7 @@ function App() {
           Alert
         </button>
       </div>
+      <MainButton text="Submit" onClick={() => alert("submitted")} />
     </TonConnectUIProvider>
   );
 }

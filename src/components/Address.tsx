@@ -6,7 +6,7 @@ const Address = () => {
 
   return (
     userFriendlyAddress && (
-      <div>
+      <div style={{ width: "80vw", overflowWrap: "anywhere" }}>
         <span>User-friendly address: {userFriendlyAddress}</span>
         <span>Raw address: {rawAddress}</span>
       </div>
